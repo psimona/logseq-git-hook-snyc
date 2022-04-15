@@ -1,9 +1,11 @@
 - > This is not meant to be a fully featured sync solution but a simple way to sync between non mobile platforms and be able to resolve conflicts easily
-- How to setup
-	- Fork this repo
-	- Clone the repo either SSH keys to be able to push without entering credentials.
-		- Note: hardcoding https credentials is possible but not reccomended
-	- After clone on every machine execute once `$ cd ./git-hooks && ./install-git-hooks.sh`
+- How to setup logseq git hook sync
+	- Copy the `git-hooks` folder in the top of your logseq database
+	- Be sure that the repo is configured to use SSH keys to be able to push without entering credentials
+		- Note: other options work too but are not recommended
+	- After clone on every machine execute once
+		- For *NIX systems (Linux, MacOS, etc)`$ cd ./git-hooks && ./install-hooks-nix.sh`
+		- For windows systems `$ cd ./git-hooks && ./install-hooks-windows.sh`
 	- It might be necessary to restart logseq for the auto commit option to take effect
 	- Changes will be committed every 60s and directly pushed thereafter if there are no conflicts
 	- If there is an issue the corresponding git error will be shown in logseq

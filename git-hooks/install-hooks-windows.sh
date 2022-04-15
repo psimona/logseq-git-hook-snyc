@@ -3,6 +3,6 @@
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 cd $SCRIPT_DIR
 
-cp ./post-commit ../.git/hooks/post-commit 
+cp ./windows/post-commit ../.git/hooks/post-commit 
 # Pre commit pull is broken on windows
-#cp ./pre-commit ../.git/hooks/pre-commit 
+#cp ./windows/pre-commit ../.git/hooks/pre-commit 
