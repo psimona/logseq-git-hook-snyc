@@ -1,4 +1,4 @@
-- > This is not meant to be a fully featured sync solution but a simple way to sync between non mobile platforms and be able to resolve conflicts easily
+- > This is not meant to be a fully featured sync solution for Logseq but a simple way to sync between non mobile platforms and be able to resolve conflicts easily if you know your git foo.
 - How to setup logseq git hook sync
 	- Copy the `git-hooks` folder in the top of your logseq database
 	- Be sure that the repo is configured to use SSH keys to be able to push without entering credentials
