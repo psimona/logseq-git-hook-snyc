@@ -1,0 +1,13 @@
+- > This is not meant to be a fully featured sync solution but a simple way to sync between non mobile platforms and be able to resolve conflicts easily
+- How to setup
+	- Fork this repo
+	- Clone the repo either SSH keys to be able to push without entering credentials.
+		- Note: hardcoding https credentials is possible but not reccomended
+	- After clone on every machine execute once `$ cd ./git-hooks && ./install-git-hooks.sh`
+	- It might be necessary to restart logseq for the auto commit option to take effect
+	- Changes will be committed every 60s and directly pushed thereafter if there are no conflicts
+	- If there is an issue the corresponding git error will be shown in logseq
+	- Git failing to push or pull due to merge issues must be resolved outside logseq
+- Known limitations
+	- Automatically pulling before committing works only on *NIX systems (Linux, Unix, MacOS)
+- [[Troubleshooting]]

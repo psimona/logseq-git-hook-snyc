@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# automatically push after commit
+# Credential handling options:
+#  - hardcode credentials in URL 
+#  - use ssh with key auth 
+#  - https://git-scm.com/docs/git-credential-store
+#  - git credential helper on windows
+
+git push

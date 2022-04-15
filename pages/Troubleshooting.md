@@ -1,0 +1,14 @@
+- Check that your git hooks are executable on your platform
+	- `cd .git/hooks && ls -lah`
+- Check that committing from command line executes your hooks and does not ask for credentials
+- I cannot see changes that I did on another machine
+	- Refresh your logseq database
+	- Reindex your logseq database
+- Logseq is not auto committing
+	- Remove git hooks via `./git-hooks/remove-hooks.sh`
+	- Confirm that logseq is auto committing, if not there is another issue not related to the hooks
+	- Add pre-commit hook manually, test if issue is present
+	- Remove pre-commit hook manually
+	- Add post-commit hook manually, test if issue is present
+	- Remove post-commit hook manually
+	- Post github issue with version of forked repo, platform and any output from logseq if present

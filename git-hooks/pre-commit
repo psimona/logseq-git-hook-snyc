@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#
+# Pull before committing
+# Credential handling options:
+#  - hardcode credentials in URL 
+#  - use ssh with key auth 
+#  - https://git-scm.com/docs/git-credential-store
+#  - git credential helper on windows
+
+git pull --no-rebase
